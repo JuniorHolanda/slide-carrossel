@@ -1,0 +1,126 @@
+* , *::before , *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #1b1b1b;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+}
+
+.slideWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slideList {
+    display: flex;
+}
+
+.slideItem {
+    width: 90vw;
+    flex-shrink: 0;
+    cursor: grab;
+}
+
+.slideContent {
+    position: relative;
+    color: white;
+    border-radius: 3rem;
+}
+
+.slideImage {
+    width: 100%;
+    border-radius: 3rem;
+
+    
+} 
+
+.slideDescription {
+    position: absolute;
+    bottom: 0;
+    padding: 4rem;
+}
+
+.slideDescription h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5rem;
+}
+.slideDescription p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.slideNavButton {
+    position: absolute;
+    color: #ffffff;
+    background-color: transparent;
+    font-size: 2rem;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.slideNavPrevious {
+    left: 3rem;
+
+}
+
+.slideNavNext {
+    right: 3rem;
+    
+}
+
+.slideControls{
+    margin: 10px auto 0;
+}
+
+.slideControlButton {
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 1;
+    margin: 0px 3px;
+    cursor: pointer;
+}
+
+.slideControlButton.active {
+    color: #cdBcf5;
+}
+
+@media screen and (max-width: 768px) {
+    .slideDescription {
+        padding: 5px;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .slideDescription h3 {
+        font-size:2rem;
+    }
+    .slideDescription p {
+        display: none;
+    }
+
+    .slideControlButton{
+        font-size: .5rem;
+        margin: 0px 2px;
+        
+    }
+}
