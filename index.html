@@ -14,15 +14,15 @@
 <body>
 
     <div class="wrapper">
-        <div class="slideWrapper">
+        <div class="slideWrapper" data-slide="wrapper">
 
-            <button class="slideNavButton slideNavPrevious fa-solid fa-chevron-left"></button>
-            <button class="slideNavButton slideNavNext fa-solid fa-chevron-right"></button>
+            <button class="slideNavButton slideNavPrevious fa-solid fa-chevron-left" data-slide="navPreviousButton"></button>
+            <button class="slideNavButton slideNavNext fa-solid fa-chevron-right" data-slide="navNextButton"></button>
 
 
-            <div class="slideList">
+            <div class="slideList" data-slide="list">
                 <!------------------------------------------------------01 Slide------------------------------------------------->
-                <div class="slideItem">
+                <div class="slideItem" data-slide="item" data-index="0">
                     <div class="slideContent"> <!--Local da imagem e títulos-->
                         <img class="slideImage" src="assets/imgs/assassinscreed.png" alt="Assassin's Creed">
                         <div class="slideDescription">
@@ -33,7 +33,7 @@
                 </div>
 
                 <!------------------------------------------------------02 Slide------------------------------------------------->
-                <div class="slideItem">
+                <div class="slideItem" data-slide="item" data-index="1">
                     <div class="slideContent"> <!--Local da imagem e títulos-->
                         <img class="slideImage" src="assets/imgs/fortnite.png" alt="Fortnite">
                         <div class="slideDescription">
@@ -44,7 +44,7 @@
                 </div>
 
                 <!------------------------------------------------------03 Slide------------------------------------------------->
-                <div class="slideItem">
+                <div class="slideItem" data-slide="item" data-index="2">
                     <div class="slideContent"> <!--Local da imagem e títulos-->
                         <img class="slideImage" src="assets/imgs/freefire.png" alt="freefire">
                         <div class="slideDescription">
@@ -55,7 +55,7 @@
                 </div>
 
                 <!------------------------------------------------------04 Slide------------------------------------------------->
-                <div class="slideItem">
+                <div class="slideItem" data-slide="item" data-index="3">
                     <div class="slideContent"> <!--Local da imagem e títulos-->
                         <img class="slideImage" src="assets/imgs/gta-v.png" alt="gta-v">
                         <div class="slideDescription">
@@ -66,7 +66,7 @@
                 </div>
 
                 <!------------------------------------------------------05 Slide------------------------------------------------->
-                <div class="slideItem">
+                <div class="slideItem" data-slide="item" data-index="4">
                     <div class="slideContent"> <!--Local da imagem e títulos-->
                         <img class="slideImage" src="assets/imgs/halo5.png" alt="halo5">
                         <div class="slideDescription">
@@ -77,7 +77,7 @@
                 </div>
 
                 <!------------------------------------------------------06 Slide------------------------------------------------->
-                <div class="slideItem">
+                <div class="slideItem" data-slide="item" data-index="5">
                     <div class="slideContent"> <!--Local da imagem e títulos-->
                         <img class="slideImage" src="assets/imgs/league-of-legends.png" alt="league-of-legends">
                         <div class="slideDescription">
@@ -88,7 +88,7 @@
                 </div>
 
                 <!------------------------------------------------------07 Slide------------------------------------------------->
-                <div class="slideItem">
+                <div class="slideItem" data-slide="item" data-index="6">
                     <div class="slideContent"> <!--Local da imagem e títulos-->
                         <img class="slideImage" src="assets/imgs/red-dead-redemption-2.png" alt="redemption-2">
                         <div class="slideDescription">
@@ -99,7 +99,7 @@
                 </div>
 
                 <!------------------------------------------------------08 Slide------------------------------------------------->
-                <div class="slideItem">
+                <div class="slideItem" data-slide="item" data-index="7">
                     <div class="slideContent"> <!--Local da imagem e títulos-->
                         <img class="slideImage" src="assets/imgs/zelda.png" alt="zelda">
                         <div class="slideDescription">
@@ -111,17 +111,20 @@
 
             </div>
 
-            <div class="slideControls">
-                <button class="slideControlButton fa-solid fa-circle active"></button>
-                <button class="slideControlButton fa-solid fa-circle"></button>
-                <button class="slideControlButton fa-solid fa-circle"></button>
-                <button class="slideControlButton fa-solid fa-circle"></button>
-                <button class="slideControlButton fa-solid fa-circle"></button>
-                <button class="slideControlButton fa-solid fa-circle"></button>
-                <button class="slideControlButton fa-solid fa-circle"></button>
-                <button class="slideControlButton fa-solid fa-circle"></button>
+            <div class="slideControls" data-slide="controlsWrapper">
+                <button class="slideControlButton fa-solid fa-circle active" data-slide="controlButton"></button>
+                <button class="slideControlButton fa-solid fa-circle" data-slide="controlButton"> </button>
+                <button class="slideControlButton fa-solid fa-circle" data-slide="controlButton"> </button>
+                <button class="slideControlButton fa-solid fa-circle" data-slide="controlButton"> </button>
+                <button class="slideControlButton fa-solid fa-circle" data-slide="controlButton"> </button>
+                <button class="slideControlButton fa-solid fa-circle" data-slide="controlButton"> </button>
+                <button class="slideControlButton fa-solid fa-circle" data-slide="controlButton"> </button>
+                <button class="slideControlButton fa-solid fa-circle" data-slide="controlButton"> </button>
             </div>
         </div>
     </div> 
+
+    <script src="assets/js/slides.js"></script>
+
 </body>
 </html>
